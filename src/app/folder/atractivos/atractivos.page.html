@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Atractivos turísticos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item  *ngFor="let atractivo of atractivos">
+    <ion-avatar slot="start">
+      <ion-img [src]="atractivo.imagenURL"></ion-img>
+    </ion-avatar>
+    <ion-label>{{atractivo.titulo}}</ion-label>  
+  </ion-item>   
+</ion-list>
+</ion-content>
